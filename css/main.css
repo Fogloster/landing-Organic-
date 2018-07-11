@@ -175,6 +175,26 @@ body {
   background-position: center;
 }
 
+/*IN FUTURE IMG WILL CHANGED*/
+ 
+/*.slider-controls__play {
+  content: "";
+
+  position: absolute;
+  top: 270px;
+  left: 225px;
+  z-index: 0;
+
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+
+  background: #fe992a;
+  background-image: url(../img/pause-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
 .slider-controls__pause {
   content: "";
 
@@ -188,9 +208,10 @@ body {
   font-size: 0;
 
   background: #fe992a;
-  background-image: url(../img/pause-icon.png);
+  background-image: url(../img/play-icon.png);
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .slider-controls__next {
