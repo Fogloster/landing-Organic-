@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -31,8 +31,13 @@ body {
 
   display: flex;
   
+  position: relative;
 }
 
+.img__wrapper {
+  position: absolute;
+  top: 766px;
+}
 .main-header-logo {
   padding-top: 22px;
   padding-left: 25px;
@@ -62,4 +67,68 @@ body {
   color: white;
   font-weight: 400;
   text-decoration: none;
+}
+
+.main-header-title {
+  font-size: 52px;
+  font-weight: 300;
+  font-height: 62px;
+
+  color: white;
+  
+  padding: 0;
+  margin: 0;
+  padding-top: 170px;
+
+}
+
+.main-header-title:nth-of-type(2) {
+  padding-top: 35px;
+}
+
+.main-header-text {
+  padding-top: 55px;
+  margin: 0;
+  width: 395px;
+
+  font-weight: 400;
+  color: white;
+  line-height: 25px;
+  padding-bottom: 420px;
+}
+
+.main-wrapper {
+}
+
+#slides {
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  height: 215px;
+  width: 275px;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.showing {
+  z-index: 2;
+  opacity: 1;
+}
+
+.small-slider {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fe992a;
 }
