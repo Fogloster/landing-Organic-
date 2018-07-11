@@ -97,7 +97,22 @@ body {
   padding-bottom: 420px;
 }
 
-.main-wrapper {
+.slider__wrapper {
+  margin-left: 320px;
+  margin-right: 105px;
+  display: inline-block;
+  position: relative;
+}
+
+.slider__wrapper:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 300px;
+  width: 1px;
+  height: 297px;
+  background-color: #d1d1d1;
+  filter: opacity(100%);
 }
 
 #slides {
@@ -105,7 +120,7 @@ body {
   padding: 0;
 
   position: relative;
-  height: 215px;
+  height: 170px;
   width: 275px;
   list-style: none;
 }
@@ -131,4 +146,121 @@ body {
   font-weight: 400;
   line-height: 28px;
   color: #fe992a;
+
+}
+
+.slider-label {
+  position: relative;
+}
+
+.slider-controls {
+  margin-top: 70px;
+}
+
+.slider-controls__previous {
+  content: "";
+
+  position: absolute;
+  top: 270px;
+  left: 190px;
+  z-index: 1;
+
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+
+  background: #fe992a;
+  background-image: url(../img/arrow-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-controls__pause {
+  content: "";
+
+  position: absolute;
+  top: 270px;
+  left: 225px;
+  z-index: 1;
+
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+
+  background: #fe992a;
+  background-image: url(../img/pause-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-controls__next {
+  content: "";
+
+  position: absolute;
+  top: 270px;
+  left: 260px;
+  z-index: 1;
+
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+
+  background: #fe992a;
+  background-image: url(../img/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-controls__next:hover,
+.slider-controls__previous:hover,
+.slider-controls__pause:hover {
+  background-color: #ffba6e;
+}
+
+.slider-controls__next:active,
+.slider-controls__previous:active,
+.slider-controls__pause:active {
+  background-color: #fc8401;
+}
+
+.ending-quotes--first-type {
+  margin-left: 110px;
+}
+
+.ending-quotes--second-type {
+  margin-left: 35px;
+}
+
+.ending-quotes--third-type {
+  margin-left: 45px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.article-wrapper {
+  width: 580px;
+}
+
+.article-wrapper__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fe992a;
+}
+
+.article-wrapper__text {
+  margin: 0;
+  padding: 0;
+
+  line-height: 28px;
+  font-weight: 400;
+  font-family: Arial;
+  color: #737c85;
 }

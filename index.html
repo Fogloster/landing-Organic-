@@ -63,27 +63,42 @@
   <main class="main">
   	  <div class="container">
   	  	<div class="main-wrapper">
-  	      <ul class="small-slider" id="slides">
-  	        <li class="slide showing">
-  	          Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec leo nici, feugiat vel placerat vitae, vulputate ac nibh.
-  	          Ut scelerisque quis nulla sed tempor.
-  	        </li>
-  	        <li class="slide">
-  	          Donec leo nici, feugiat vel placerat vitae, vulputate ac nibh. Ut scelerisque quis nulla sed tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  	        </li>
-  	        <li class="slide">
-  	          Ut scelerisque quis nulla sed tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo nici, feugiat vel placerat vitae, vulputate ac nibh.
-  	        </li>
-  	      </ul>
-  	      <button class="pause" id="pause">Pause</button>
-  	      <button class="slider-controls" id="previous">Previous</button>
-  	      <button class="slider-controls" id="next">Next</button>
+  	  	  <div class="slider__wrapper">
+  	        <ul class="small-slider" id="slides">
+  	          <li class="slide showing">
+  	          	<img src="img/opening-quotes.png" height="14" width="13" alt="opening-quotes">
+  	            <br>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec leo nici, feugiat vel placerat vitae, vulputate ac nibh.
+  	            Ut scelerisque quis nulla sed tempor.<br>
+  	            <img class="ending-quotes ending-quotes--first-type" src="img/ending-quotes.png" height="14" width="13" alt="ending-quotes">
+  	          </li>
+  	          <li class="slide">
+  	          	<img src="img/opening-quotes.png" height="14" width="13" alt="opening-quotes">
+  	            <br>Donec leo nici, feugiat vel placerat vitae, vulputate ac nibh. Ut scelerisque quis nulla sed tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+  	            <img class="ending-quotes ending-quotes--second-type" src="img/ending-quotes.png" height="14" width="13" alt="ending-quotes">
+  	          </li>
+  	          <li class="slide">
+  	          	<img src="img/opening-quotes.png" height="14" width="13" alt="opening-quotes">
+  	            <br>Ut scelerisque quis nulla sed tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo nici, feugiat vel placerat vitae, vulputate ac nibh.<br>
+  	            <img class="ending-quotes ending-quotes--third-type" src="img/ending-quotes.png" height="14" width="13" alt="ending-quotes">
+  	          </li>
+  	        </ul>
+  	        <div class="slider-controls__wrapper">
+  	          <button class="slider-controls visually-hidden" id="pause"></button>
+  	          <button class="slider-controls visually-hidden" id="previous"></button>
+  	          <button class="slider-controls visually-hidden" id="next"></button>
+  	          <div class="slider-controls__label">
+  	          	<label class="slider-label slider-controls__label slider-controls__pause" for="pause"></label>
+  	          	<label class="slider-label slider-controls__label slider-controls__previous" for="previous"></label>
+  	          	<label class="slider-label slider-controls__label slider-controls__next" for="next"></label>
+  	          </div>
+  	        </div>  
+  	      </div>
   	      <div class="article-wrapper">
   	  	    <h2 class="article-wrapper__title">
   	  	      Lorem ipsum dolor sit amet consectetur
   	  	    </h2>
-  	  	    <p class="">
-  	          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo nisi, feugiat vel placerat vitae, vulputate ac nibh. Ut scelerisque quis nulla sed tempor. maecenas viverra leo sed risus laoreet rutrum. Praesent lobortis ultrices vestibulum. Mauris rhoncus sagittis elit, a congue justo eleifend adipiscing. Ut pulvinar dignissim ante, at mollis justo laoreet et. Vestibulum viverra purus ligula, in placerat sapien condimentum nec. In diam nulla, pharetra dapibus molestie vitae, luctus a ante"
+  	  	    <p class="article-wrapper__text">
+  	          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo nisi, feugiat vel placerat vitae, vulputate ac nibh. Ut scelerisque quis nulla sed tempor. maecenas viverra leo sed risus laoreet rutrum. Praesent lobortis ultrices vestibulum. Mauris rhoncus sagittis elit, a congue justo eleifend adipiscing. Ut pulvinar dignissim ante, at mollis justo laoreet et. Vestibulum viverra purus ligula, in placerat sapien condimentum nec. In diam nulla, pharetra dapibus molestie vitae, luctus a ante.
   	  	    </p>
   	  	  </div>
   	    </div>
