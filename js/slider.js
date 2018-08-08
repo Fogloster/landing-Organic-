@@ -5,7 +5,10 @@ for(var i=0; i<controls.length; i++){
 
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,3000);
+var slideInterval = setInterval(nextSlide,2000);
+// var play = document.querySelector('.pause-btn');
+// var close = popup.querySelector('play-btn')
+
 
 function nextSlide(){
   goToSlide(currentSlide+1);
@@ -53,3 +56,10 @@ previous.onclick = function(){
   pauseSlideshow();
   previousSlide();
 };
+
+
+ink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+  guestname.focus();
+});
